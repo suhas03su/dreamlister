@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddDataViewController" customModule="DreamLister" customModuleProvider="target">
+            <connections>
+                <outlet property="dreamDescription" destination="1je-qd-lZE" id="bQc-eE-aUI"/>
+                <outlet property="dreamInformation" destination="omT-bb-gPT" id="UIW-dz-zVy"/>
+                <outlet property="dreamTarget" destination="m4S-7d-k5q" id="7Dc-ot-8BU"/>
+                <outlet property="dreamTitle" destination="0oA-rd-q3j" id="1cq-P1-TEx"/>
+                <outlet property="imageViewButton" destination="xtU-es-xZL" id="bLc-8e-cUZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0oA-rd-q3j">
+                    <rect key="frame" x="57" y="413" width="300" height="30"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="AeN-ke-ewa"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1je-qd-lZE">
+                    <rect key="frame" x="57" y="467" width="300" height="150"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="Crn-Gx-7qe"/>
+                        <constraint firstAttribute="height" constant="150" id="Jmk-QJ-x3r"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Target" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4S-7d-k5q">
+                    <rect key="frame" x="57" y="656" width="300" height="30"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="c9o-MU-KrF"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Extra Information (optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="omT-bb-gPT">
+                    <rect key="frame" x="57" y="704" width="300" height="30"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="H4U-WD-Oox"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PI-Oq-JwM">
+                    <rect key="frame" x="57" y="810" width="150" height="52"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="2ia-pp-OFg"/>
+                        <constraint firstAttribute="height" constant="52" id="5KX-7n-OXK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="cancelTapped:" destination="-1" eventType="touchUpInside" id="A5k-Qe-7ig"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMb-o0-yjn">
+                    <rect key="frame" x="207" y="810" width="150" height="52"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <state key="normal" title="Save">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="saveTapped:" destination="-1" eventType="touchUpInside" id="52Z-sX-xUu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtU-es-xZL">
+                    <rect key="frame" x="57" y="64" width="300" height="300"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="6U7-2E-XJc"/>
+                        <constraint firstAttribute="height" constant="300" id="9fg-xz-hyF"/>
+                    </constraints>
+                    <state key="normal" image="google (2)"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1je-qd-lZE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7hM-2V-Iao"/>
+                <constraint firstItem="1je-qd-lZE" firstAttribute="top" secondItem="0oA-rd-q3j" secondAttribute="bottom" constant="24" id="AQe-tr-xvR"/>
+                <constraint firstItem="xtU-es-xZL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Ahu-c3-CTv"/>
+                <constraint firstItem="0oA-rd-q3j" firstAttribute="top" secondItem="xtU-es-xZL" secondAttribute="bottom" constant="49" id="HYV-J8-fbE"/>
+                <constraint firstItem="5PI-Oq-JwM" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="LqA-7b-cNW"/>
+                <constraint firstItem="CMb-o0-yjn" firstAttribute="leading" secondItem="5PI-Oq-JwM" secondAttribute="trailing" id="PVp-vR-ehe"/>
+                <constraint firstItem="CMb-o0-yjn" firstAttribute="trailing" secondItem="omT-bb-gPT" secondAttribute="trailing" id="VJt-oZ-4hu"/>
+                <constraint firstItem="5PI-Oq-JwM" firstAttribute="leading" secondItem="omT-bb-gPT" secondAttribute="leading" id="Y30-x0-sKa"/>
+                <constraint firstItem="5PI-Oq-JwM" firstAttribute="top" secondItem="CMb-o0-yjn" secondAttribute="top" id="are-2G-glQ"/>
+                <constraint firstItem="omT-bb-gPT" firstAttribute="top" secondItem="m4S-7d-k5q" secondAttribute="bottom" constant="18" id="bbR-pn-O5A"/>
+                <constraint firstItem="xtU-es-xZL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cEx-Fw-adv"/>
+                <constraint firstItem="CMb-o0-yjn" firstAttribute="leading" secondItem="5PI-Oq-JwM" secondAttribute="trailing" id="fT7-eS-6SO"/>
+                <constraint firstItem="omT-bb-gPT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gYX-ff-3o4"/>
+                <constraint firstItem="m4S-7d-k5q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="m5n-WB-ojH"/>
+                <constraint firstItem="5PI-Oq-JwM" firstAttribute="baseline" secondItem="CMb-o0-yjn" secondAttribute="firstBaseline" id="mCC-AY-KDp"/>
+                <constraint firstItem="m4S-7d-k5q" firstAttribute="top" secondItem="1je-qd-lZE" secondAttribute="bottom" constant="39" id="pkM-OU-ODG"/>
+                <constraint firstItem="0oA-rd-q3j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="syr-FK-HZb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="50.724637681159422" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="google (2)" width="24" height="24"/>
+    </resources>
+</document>

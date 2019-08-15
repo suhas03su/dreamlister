@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="DreamLister" customModuleProvider="target">
+            <connections>
+                <outlet property="emailid" destination="dvY-KV-aM5" id="bY1-BQ-lBK"/>
+                <outlet property="password" destination="17B-Ij-OBn" id="PpO-RI-THD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qI-kO-UXe">
+                    <rect key="frame" x="152.5" y="194" width="109.5" height="39"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvY-KV-aM5">
+                    <rect key="frame" x="20" y="257" width="374" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="17B-Ij-OBn">
+                    <rect key="frame" x="20" y="314" width="374" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIv-5a-Tae">
+                    <rect key="frame" x="161.5" y="391" width="91" height="45"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                    <state key="normal" title="Sign Up"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="signUpUser:" destination="-1" eventType="touchUpInside" id="kWu-rE-mYu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NN-99-tJY">
+                    <rect key="frame" x="222" y="448" width="172" height="31"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                    <state key="normal" title="Click here for Login Screen"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="backToLoginScreen:" destination="-1" eventType="touchUpInside" id="rqF-eq-ZfJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bIv-5a-Tae" firstAttribute="top" secondItem="17B-Ij-OBn" secondAttribute="bottom" constant="47" id="2K8-AY-8um"/>
+                <constraint firstItem="dvY-KV-aM5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="64L-mq-tNJ"/>
+                <constraint firstItem="4NN-99-tJY" firstAttribute="top" secondItem="17B-Ij-OBn" secondAttribute="bottom" constant="104" id="7ii-Dg-T8S"/>
+                <constraint firstItem="bIv-5a-Tae" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7xX-8j-qaU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="17B-Ij-OBn" secondAttribute="trailing" constant="20" id="A6u-22-iAp"/>
+                <constraint firstItem="5qI-kO-UXe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="Lrj-yZ-gVq"/>
+                <constraint firstItem="dvY-KV-aM5" firstAttribute="top" secondItem="5qI-kO-UXe" secondAttribute="bottom" constant="24" id="VHv-4V-zdh"/>
+                <constraint firstItem="17B-Ij-OBn" firstAttribute="top" secondItem="dvY-KV-aM5" secondAttribute="bottom" constant="27" id="apK-wo-hSi"/>
+                <constraint firstItem="5qI-kO-UXe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bkh-AS-2Zv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4NN-99-tJY" secondAttribute="trailing" constant="20" id="tQM-9b-ohg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dvY-KV-aM5" secondAttribute="trailing" constant="20" id="tsb-xe-o9g"/>
+                <constraint firstItem="17B-Ij-OBn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="zZ1-Bu-bMn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="144.64285714285714"/>
+        </view>
+    </objects>
+</document>
